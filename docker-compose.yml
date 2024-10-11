@@ -1,0 +1,16 @@
+version: '3.4'
+
+services:
+  web:
+    image: nginx:alpine
+    container_name: midterm
+    ports:
+      - "8080:80"
+    volumes:
+      - ./index.html:/usr/share/nginx/html/index.html
+      - ./family.html:/usr/share/nginx/html/family.html
+      - ./education.html:/usr/share/nginx/html/education.html
+      - ./hobbies.html:/usr/share/nginx/html/hobbies.html
+      - ./contact.html:/usr/share/nginx/html/contact.html
+      - ./style.css:/usr/share/nginx/html/style.css
+    restart: always
