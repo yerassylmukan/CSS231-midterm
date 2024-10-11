@@ -1,6 +1,10 @@
 FROM nginx:alpine
 
-COPY . /usr/share/nginx/html
+COPY ./src /usr/share/nginx/html
+
+COPY ./styles /usr/share/nginx/html/styles
+
+# COPY ./images /usr/share/nginx/html/images
 
 EXPOSE 80
 
