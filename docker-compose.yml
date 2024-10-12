@@ -8,6 +8,6 @@ services:
       - "8080:80"
     volumes:
       - ./src:/usr/share/nginx/html
-      - ./styles:/usr/share/nginx/html/styles
-      # - ./images:/usr/share/nginx/html/images
+      - ./style:/usr/share/nginx/html/style
+      - ./images:/usr/share/nginx/html/images
     restart: always

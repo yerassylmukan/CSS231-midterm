@@ -2,9 +2,9 @@ FROM nginx:alpine
 
 COPY ./src /usr/share/nginx/html
 
-COPY ./styles /usr/share/nginx/html/styles
+COPY ./style /usr/share/nginx/html/styles
 
-# COPY ./images /usr/share/nginx/html/images
+COPY ./images /usr/share/nginx/html/images
 
 EXPOSE 80
 
